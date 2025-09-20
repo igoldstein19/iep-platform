@@ -24,10 +24,6 @@ const benefits = [
 export default function ConceptA() {
   return (
     <div className="bg-white">
-      {/* TEMPORARY TAILWIND PROBE - DELETE AFTER TESTING */}
-      <div className="m-6 p-6 rounded-2xl shadow-2xl bg-blue-50 border border-gray-200">
-        Tailwind probe: rounded-2xl + shadow-2xl + bg-blue-50
-      </div>
       {/* Navigation */}
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
