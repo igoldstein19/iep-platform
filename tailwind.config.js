@@ -1,10 +1,33 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  mode: 'jit',
-  purge: false, // Disable purging temporarily
+  safelist: [
+    // All classes from your page.tsx component
+    'bg-white', 'mx-auto', 'flex', 'max-w-7xl', 'items-center', 'justify-between', 'p-6', 'lg:px-8',
+    'lg:flex-1', '-m-1.5', 'p-1.5', 'text-2xl', 'font-bold', 'text-gray-900', 'lg:justify-end',
+    'text-sm', 'font-semibold', 'leading-6', 'relative', 'isolate', 'px-6', 'pt-14',
+    'max-w-2xl', 'py-32', 'sm:py-48', 'lg:py-56', 'text-center', 'text-4xl', 'tracking-tight',
+    'sm:text-6xl', 'text-blue-600', 'mt-6', 'text-lg', 'leading-8', 'text-gray-600',
+    'mt-10', 'justify-center', 'gap-x-6', 'rounded-md', 'bg-blue-600', 'px-6', 'py-3',
+    'text-base', 'text-white', 'shadow-sm', 'hover:bg-blue-500', 'focus-visible:outline',
+    'focus-visible:outline-2', 'focus-visible:outline-offset-2', 'focus-visible:outline-blue-600',
+    'max-w-6xl', 'absolute', 'inset-0', 'bg-gradient-to-r', 'from-blue-600', 'to-purple-600',
+    'blur-3xl', 'opacity-20', '-z-10', 'rounded-2xl', 'shadow-2xl', 'border', 'border-gray-200',
+    'overflow-hidden', 'bg-gray-50', 'py-4', 'border-b', 'space-x-4', 'w-8', 'h-8',
+    'rounded-full', 'font-medium', 'space-x-2', 'px-3', 'py-1', 'bg-green-100', 'text-green-700',
+    'bg-yellow-100', 'text-yellow-700', 'grid', 'grid-cols-1', 'lg:grid-cols-3', 'gap-6',
+    'col-span-2', 'mb-4', 'rounded-lg', 'h-48', 'h-16', 'w-16', 'mb-2', 'space-y-3',
+    'bg-blue-50', 'border-blue-200', 'text-blue-700', 'py-24', 'sm:py-32', 'gap-x-8',
+    'gap-y-16', 'lg:grid-cols-3', 'mx-auto', 'flex-col', 'gap-y-4', 'leading-7',
+    'order-first', 'text-3xl', 'sm:text-5xl', 'max-w-2xl', 'sm:text-4xl',
+    'lg:mx-0', 'lg:max-w-none', 'lg:grid-cols-2', 'h-6', 'w-6', 'text-green-500',
+    'flex-shrink-0', 'text-gray-700', 'mt-16', 'sm:grid-cols-2', 'id', 'py-16', 'sm:py-24',
+    'text-blue-100', 'hover:bg-gray-50', 'focus-visible:outline-white'
+  ],
   theme: {
     extend: {
       colors: {
