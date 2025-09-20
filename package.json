@@ -1,0 +1,45 @@
+{
+  "name": "iep-platform",
+  "version": "1.0.0",
+  "description": "A comprehensive platform designed to help special education teachers streamline the process of developing Individualized Education Programs (IEPs) for their students.",
+  "private": true,
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iep",
+    "special-education",
+    "education",
+    "ferpa",
+    "nextjs",
+    "react"
+  ],
+  "author": "IEP Platform Team",
+  "license": "MIT",
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "next": "^15.5.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^24.5.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.20.5"
+  }
+}
