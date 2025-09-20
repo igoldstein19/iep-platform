@@ -46,6 +46,11 @@ export default function ConceptA() {
               IEP Development,
               <span className="text-blue-600"> Streamlined</span>
             </h1>
+            <div className="mt-4">
+              <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700">
+                🚀 Updated September 19, 2025 - Isaac's Platform
+              </span>
+            </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Save 12+ hours per week with AI-powered IEP creation, real-time progress tracking,
               and seamless team collaboration. Built specifically for special education teachers.
